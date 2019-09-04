@@ -15,5 +15,5 @@ class Student(models.Model):
 class School(models.Model):
     name=models.CharField(max_length=20)
     student=models.ForeignKey(Student,on_delete=models.CASCADE)
-    maxstudent=models.IntegerField(default=100)
+    maxstudent=models.IntegerField(default=10)
     location=models.CharField(max_length=50)
